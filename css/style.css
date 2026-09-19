@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #0E7C7B;
+    --secondary-color: rgb(23, 190, 187);
+    --background-color: hsl(137, 59%, 89%);
+    --text-color: black;
+    --color-Blackberry-Cream: hsl(316, 44%, 20%);
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+h1, h2 {
+    font-family: "Verdana", "Arial", sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: left;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 1.2rem;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 70%;
+}
+
+a{
+    color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 0.75em;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: var(--color-Blackberry-Cream);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background-color: var(--secondary-color);
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-Blackberry-Cream);
+}
+
+main {
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    max-width: 960px;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--color-Blackberry-Cream);
+}
+
+figure {
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-row {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 45%;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  padding: 0.3rem;
+  background-color: var(--color-Blackberry-Cream);
+}
+
+figcaption {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+caption {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+th, td {
+  padding: 0.75em 1em;
+  border: 1px solid var(--secondary-color);
+  text-align: left;
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: var(--color-Blackberry-Cream);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+tbody tr:hover {
+    background-color: var(--secondary-color);
+}
+
+tfoot td {
+    font-style: italic;
+    background-color: var(--background-color);
+}
+
+fieldset {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+legend {
+    font-weight: 700;
+    padding: 0 0.5rem;
+    color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+input, textarea, button {
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+input[type="radio"]{
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    accent-color: var(--primary-color);
+}
+input[type="radio"] + label{
+    display: inline-block;
+    margin-left: 0;
+    font-weight: normal;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+#main-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 1vh;
+    color: var(--secondary-color);
+}
